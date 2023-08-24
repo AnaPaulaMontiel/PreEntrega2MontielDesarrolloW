@@ -1,0 +1,393 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Cambiar la configuracion de raiz */
+/* Por defecto
+1 rem == 16px */
+
+html{
+    font-size: 62.5%;
+}
+/* Ahora 1 rem == 10px */
+
+body {
+    background-color: rgb(248, 223, 231);
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.fondo{
+    padding: 60px;
+    border-style: groove;
+    border-color: rgb(230, 179, 244);
+    border-width: 7px;
+    border-radius: 10px;
+    padding-top: 30px;
+    outline-style: dotted;
+    outline-color: rgb(127, 90, 191);
+    outline-width: 8px;
+    margin: 15px;
+}
+
+.logo-inicio{
+    background-color: rgb(213, 199, 231);
+    padding-bottom: 20px;
+    text-align: center;
+    border-radius: 20px;
+    color: white;
+    text-shadow: 2px 2px pink;
+    font-size: 50px;
+}
+
+
+@font-face {
+    font-family: "miFuente";
+    src: url(../fuentes/miFuente.ttf);
+}
+
+p{
+    font-family: "miFuente", sans-serif;
+}
+
+h1{
+    font-size: 30PX;
+    color: white;
+}
+
+
+.grid-container-inicio{
+    padding: 30px;
+    border-style: dotted;
+    border-color: rgb(230, 179, 244);
+    border-width: 5px;
+    border-radius: 30px;
+    padding-top: 30px;
+    outline-style: dotted;
+    outline-color: rgb(127, 90, 191);
+    outline-width: 8px;
+    margin: 15px;
+    display: grid;
+    grid-template-columns: 40rem 1fr ;
+    grid-template-rows: auto 1fr auto ;
+    gap: 10px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.grid-item-inicio-1{
+    grid-column: 1/3;
+}
+
+.grid-item-inicio-2{
+
+    padding: 40px;
+    display: flex;
+    grid-column: 1;
+    grid-row: 2/2;
+    flex-direction: column;
+    justify-content: center ;
+}
+
+.grid-item-inicio-3{
+    grid-column: 2;
+    grid-row: 2/3;
+}
+
+.nav-inicio{
+    background-color: rgb(231, 199, 227);
+    border-style: dashed;
+    border-color: aliceblue;
+    border-radius: 30px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.nav-inicio a{
+    text-decoration: none;
+    color: white;
+    text-shadow: 1px 1px rgb(130, 120, 222);
+}
+
+.nav-inicio ul{
+    list-style-type: none;
+}
+
+a:hover{
+    color: hotpink;
+}
+
+.numero-uno{
+    text-align: center;
+}
+
+.imagen-inicio {
+    max-width: 100%;
+    margin-left: 0px;
+    float: right;
+}
+
+.emote-inicio{
+    margin: 10px auto;
+    justify-content: center;
+    align-items: center;
+    max-width: 150px;
+    height: 150px;
+    background-color: rgb(197, 199, 246);
+    border: 10px solid white;
+    border-radius: 20px;
+} 
+
+.sobre-mi{
+    display: flex;
+    align-items: center;
+}
+
+.info-sobre-mi{
+    padding: 30px;
+}
+
+
+.imagen-container{
+    padding: 20px;
+}
+
+.nav-footer{
+    list-style-type: none;
+    font-size: 15px;
+}
+
+.twitter,
+.instagram{
+    color: aliceblue;
+    text-decoration: none;
+}
+
+.navListaCentral{
+    list-style-type: none;
+}
+
+.nav-central{
+    list-style-type: none;
+}
+
+.contenedor {
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.footer {
+    background-color: rgb(142, 93, 161);
+    padding: 20px 0;
+    text-align: center;
+    color: white;
+}
+
+.contenido-footer{
+    
+    width: 100%;
+    height: 100%;
+    
+}
+.texto-footer{
+    
+    text-align: center;
+}
+
+.textos{
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+}
+
+
+.navbar-brand{
+    font-size:30px;
+    color: aliceblue;
+}
+
+.nav-item a:hover{
+    color: hotpink;
+}
+
+.nav-link,
+.nav-item{
+    font-size: 15px;
+    color: aliceblue;
+    
+}
+
+.galeria{
+    background-color: rgb(219, 194, 232);
+    padding: 10px;
+    color: aliceblue;
+    border-style: dashed ;
+    border-width: 5px;
+    border-radius: 20px;
+    margin: 20px;
+    margin-top: 30px;
+    
+}
+
+.imagen1,
+.imagen2,
+.imagen3,
+.imagen4,
+.imagen5,
+.imagen6,
+.imagen7,
+.imagen8,
+.imagen9,
+.imagen10  {
+    width: 100%;
+    height: auto;
+}
+
+.aboutMeImg {
+    max-width: 100%;
+    height: auto;
+}
+
+.tituloPaginas{
+    margin-top: 20px;
+    text-align: center;
+}
+
+.formulario {
+    width: 50%;
+    max-width: 500px;
+    margin: 40px auto;
+    background-color: rgb(179, 152, 196);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+form {
+    display: grid;
+    gap: 10px;
+}
+
+label {
+    font-weight: bold;
+    color: white;
+}
+
+.caja-terms{
+    background-color: rgb(231, 210, 230);
+    padding: 10px;
+    border-radius: 30px;
+    color: aliceblue;
+    margin: 20px;
+}
+
+.terms-todos{
+    font-size: 20px;
+}
+
+.caja-do{
+    background-color: rgb(207, 229, 255);
+    padding: 50px;
+    border-radius: 30px;
+    color: aliceblue;
+    margin: 40px;
+}
+
+.do-dont{
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+}
+
+.caja-comis{
+    background-color: rgb(203, 220, 255);
+    padding: 20px;
+    border-style: dotted;
+    color: aliceblue;
+    margin: 40px;
+    font-size: 20px;
+}
+
+
+.grid-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    
+    transition: transform 0.3s ease-in-out;
+    overflow: hidden;
+
+}
+
+.grid-item a{
+    height: 100%;
+    width: 100%;
+}
+
+.grid-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.grid-item:hover{
+    filter: opacity(0.9);
+    transform: scale(1.04);
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+    grid-auto-rows: minmax(200px, auto);
+    gap: 10px;
+    padding: 20px;
+    grid-auto-flow: dense;
+}
+
+.wide {
+    grid-column: span 2;
+}
+
+.tall{
+    grid-row: span 2;
+}
+
+
+
+/* Cambios para vista de celular */
+@media (max-width: 768px) {
+    .grid-container-inicio {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+        margin: 10px;
+        padding: 10px;
+    }
+
+    .grid-item-inicio-1 {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .grid-item-inicio-2 {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .grid-item-inicio-3 {
+        grid-column: 1;
+        grid-row: 3;
+    }
+
+    .wide {
+        grid-column: span 2;
+    }
+    
+    .tall{
+        grid-row: span 2;
+    }
+}
